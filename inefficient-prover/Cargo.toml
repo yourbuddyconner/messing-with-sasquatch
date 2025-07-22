@@ -1,0 +1,29 @@
+[package]
+name = "bls12_381_prover"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "bls12_381_prover"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bls12_381_prover"
+path = "src/main.rs"
+
+[[bin]]
+name = "demo"
+path = "src/bin/demo.rs"
+
+[dependencies]
+ark-bls12-381.workspace = true
+ark-ec.workspace = true
+ark-ff.workspace = true
+ark-poly.workspace = true
+ark-std.workspace = true
+ark-serialize.workspace = true
+sha2.workspace = true
+rayon.workspace = true
+rand.workspace = true
+
+

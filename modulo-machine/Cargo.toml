@@ -1,0 +1,8 @@
+[package]
+name = "modulo-machine"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# GMP library bindings for high-performance big integer arithmetic
+rug.workspace = true 

@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "inefficient-prover",
+    "modulo-machine",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Ingonyama Exercises"]
+repository = "https://github.com/ingonyama-zk/ingoyama-exercises"
+
+[workspace.dependencies]
+# Big integer arithmetic
+num-bigint = "0.4"
+num-traits = "0.2"
+rug = "1.24"
+
+# Arkworks ecosystem for cryptographic operations
+ark-bls12-381 = "0.4"
+ark-ec = "0.4"
+ark-ff = "0.4"
+ark-poly = "0.4"
+ark-std = "0.4"
+ark-serialize = "0.4"
+
+# Utilities
+sha2 = "0.10"
+rayon = "1.7"
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1 
